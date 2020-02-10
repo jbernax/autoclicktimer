@@ -5,7 +5,7 @@ import random
 
 hours=7
 minuts=32
-date = f"{hours}:{minuts}"
+date = f"0{hours}:{minuts}"
 hourst=2
 minutst=20
 date2 = f"0{hourst}:{minutst}"
@@ -16,7 +16,7 @@ def click():
     pyautogui.click()
     hours=random.randint(7,9)
     minuts=random.randint(10,59)
-    date = f"{hourst}:0{minutst}"
+    date = f"0{hourst}:{minutst}"
 
     print(f"Will click at {date}")
 
@@ -29,7 +29,7 @@ def click2():
     pyautogui.click()
     hourst=random.randint(0,2)
     minutst=random.randint(10,59)
-    date2 = f"0{hours}:0{minuts}"
+    date2 = f"0{hours}:{minuts}"
 
     print(f"Will click at {date}")
 
