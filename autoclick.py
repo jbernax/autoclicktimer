@@ -3,27 +3,33 @@ import schedule
 import time
 import random
 
-x=15
-y=32
-date = f"{x}:{y}"
-xe=2
-ye=20
-date2 = f"0{xe}:{ye}"
+hours=7
+minuts=32
+date = f"{hours}:{minuts}"
+hourst=2
+minutst=20
+date2 = f"0{hourst}:{minutst}"
 
+#Morning clicking, copy this one for every click action you want
 
 def click():
     pyautogui.click()
-    x=random.randint(8,11)
-    y=random.randint(0,59)
-    date = f"{x}:{y}"
+    hours=random.randint(7,9)
+    minuts=random.randint(10,59)
+    date = f"{hourst}:0{minutst}"
 
     print(f"Will click at {date}")
 
+
+#Evening click
+#Remember to add a zero to single decimal ints (or parse it properly to time format)
+
+
 def click2():
     pyautogui.click()
-    x=random.randint(0,3)
-    y=random.randint(0,59)
-    date2 = f"0{xe}:{ye}"
+    hourst=random.randint(0,2)
+    minutst=random.randint(10,59)
+    date2 = f"0{hours}:0{minuts}"
 
     print(f"Will click at {date}")
 
