@@ -1,5 +1,5 @@
 # autoclicktimer
 
-Autoclick with a timer, based on schedule.
+Autoclick with a timer range, based on schedule and pyautogui.
 
-Use the remoteoff bat to work with Remote Windows instance. 
+Use the remoteoff bat to work with a Remote Windows instance. 
