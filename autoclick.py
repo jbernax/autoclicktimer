@@ -33,7 +33,7 @@ def click2():
 
     print(f"Will click at {date}")
 
-
+print("Starting...")
 print(f"Next click at {date} and {date2}")
 schedule.every().day.at(date).do(click)
 schedule.every().day.at(date).do(click2)
