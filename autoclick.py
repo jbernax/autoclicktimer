@@ -68,7 +68,6 @@ def click():
     
 def click3():
 
-    global freemorning
     if not freemorning:
         launchdelay=random.randint(1,60)
         time.sleep(launchdelay)
@@ -124,7 +123,7 @@ def click4():
 
 
 def click2():
-    global freeevening
+    
     global date2
     if not freeevening:            
         rdelay=random.randint(1,2200)
