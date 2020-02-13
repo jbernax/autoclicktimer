@@ -104,9 +104,9 @@ def click4():
             foodminuts=random.randint(10,59)
             endfood=random.randint(15,16)
             endfoodminuts=random.randint(10,59)
-        
-    date3 = f"{food}:{foodminuts}"
-    date4 = f"{endfood}:{endfoodminuts}"
+            date3 = f"{food}:{foodminuts}"
+            date4 = f"{endfood}:{endfoodminuts}"
+
     print(f"Active from {date} to {date2}")
     
     
