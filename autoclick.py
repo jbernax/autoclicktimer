@@ -115,9 +115,10 @@ def click4():
             date3 = f"{food}:{foodminuts}"
             date4 = f"{endfood}:{endfoodminuts}"
         
+#randomstops
 
-        breaksevening=randint(0,3)
-        if breaksevening !=0
+        breaksevening=random.randint(0,3)
+        if breaksevening != 0:
             rsleep=random.randint(300,2500)
             rback=random.randint(360,5000)
             print(f"Will take a break of {rback} seconds after {rsleep} seconds")
@@ -125,7 +126,7 @@ def click4():
             pyautogui.doubleClick(500, 100)
             time.sleep(rback)
             pyautogui.doubleClick(500, 100)
-        if breaksevening !=1
+        if breaksevening !=1:
             rsleep2=random.randint(300,3000)
             rback2=random.randint(360,9900)
             print(f"Will take a break of {rback2} seconds after {rsleep2} seconds")
@@ -133,7 +134,7 @@ def click4():
             pyautogui.doubleClick(500, 100)
             time.sleep(rback2)
             pyautogui.doubleClick(500, 100)
-        if breaksevening !=2
+        if breaksevening !=2:
             rsleep3=random.randint(400,1500)
             rback3=random.randint(360,8500)
             print(f"Will take a break of {rback3} seconds after {rsleep3} seconds")
@@ -148,7 +149,6 @@ def click4():
     
     
 
-#randomstops
 #
 #
 
