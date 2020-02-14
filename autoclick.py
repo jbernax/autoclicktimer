@@ -163,7 +163,7 @@ def click2():
     
     global date2
     if not freeevening:            
-        rdelay=random.randint(1,2200)
+        rdelay=random.randint(1,100)
         time.sleep(rdelay)
         pyautogui.doubleClick(500, 100)
         hourst=random.randint(0,2)
