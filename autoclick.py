@@ -52,7 +52,8 @@ def click():
         freemorning = True
         print ("Will take a break next morning")
 
-    if not freemorning:
+    else:
+        freemorning = False
         rdelay=random.randint(10,3600)
         time.sleep(rdelay)
         pyautogui.doubleClick(500, 100)
@@ -90,11 +91,13 @@ def click4():
     global date3
     global date4
 
-    rsiesta =random.randint(0,5)
+    rsiesta =random.randint(0,3)
     if rsiesta == 0:
         freeevening = True
         print ("Will take a break next evening")
     else:
+        
+        freeevening = False
     
         launchdelay=random.randint(1,60)
         time.sleep(launchdelay)
