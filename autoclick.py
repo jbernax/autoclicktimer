@@ -18,7 +18,7 @@ date2 = f"0{hourst}:{minutst}"
 
 #launchtime
 
-food=random.randint(13,14)
+food=14
 foodminuts=random.randint(10,59)
 endfood=random.randint(15,16)
 endfoodminuts=random.randint(10,59)
