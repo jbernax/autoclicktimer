@@ -18,7 +18,7 @@ date2 = f"0{hourst}:{minutst}"
 
 #launchtime
 
-food=14
+food=random.randint(13,14)
 foodminuts=random.randint(10,59)
 endfood=random.randint(15,16)
 endfoodminuts=random.randint(10,59)
@@ -55,7 +55,7 @@ def click():
     else:
         freemorning = False
         print("Working this morning")
-        rdelay=random.randint(10,3600)
+        rdelay=random.randint(10,200)
         time.sleep(rdelay)
         pyautogui.doubleClick(500, 100)
 
@@ -64,14 +64,18 @@ def click():
         minuts=random.randint(10,59)
         date = f"{hours}:{minuts}"
         print(f"Active from {date} to {date2}")
-        rsleep=random.randint(300,4500)
-        rback=random.randint(360,4500)
-        print(f"Will take a break of {rback} seconds after {rdelay+rsleep} seconds")
-        time.sleep(rsleep)
-        pyautogui.doubleClick(500, 100)
-        time.sleep(rback)
-        pyautogui.doubleClick(500, 100)
-        print("End of the pause")
+        randbreak = random.randint(0,3)
+        if randbreak == 0:
+            print("Working non stop")
+        else:   
+            rsleep=random.randint(375,2000)
+            rback=random.randint(360,2000)
+            print(f"Will take a break of {rback} seconds after {rdelay+rsleep} seconds")
+            time.sleep(rsleep)
+            pyautogui.doubleClick(500, 100)
+            time.sleep(rback)
+            pyautogui.doubleClick(500, 100)
+            print("End of the pause")
 
 
 
