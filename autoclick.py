@@ -54,6 +54,7 @@ def click():
 
     else:
         freemorning = False
+        print("Working this morning")
         rdelay=random.randint(10,3600)
         time.sleep(rdelay)
         pyautogui.doubleClick(500, 100)
@@ -70,6 +71,7 @@ def click():
         pyautogui.doubleClick(500, 100)
         time.sleep(rback)
         pyautogui.doubleClick(500, 100)
+        print("End of the pause")
 
 
 
@@ -98,6 +100,7 @@ def click4():
     else:
         
         freeevening = False
+        print ("End of the launch")
     
         launchdelay=random.randint(1,60)
         time.sleep(launchdelay)
@@ -117,6 +120,7 @@ def click4():
             endfoodminuts=random.randint(10,59)
             date3 = f"{food}:{foodminuts}"
             date4 = f"{endfood}:{endfoodminuts}"
+        print (f"Next launch from  {date3} to {date4}")
         
 #randomstops
 
@@ -128,6 +132,7 @@ def click4():
             time.sleep(rsleep)
             pyautogui.doubleClick(500, 100)
             time.sleep(rback)
+            print("End of the pause")
             pyautogui.doubleClick(500, 100)
         if breaksevening !=1:
             rsleep2=random.randint(300,3000)
@@ -136,6 +141,7 @@ def click4():
             time.sleep(rsleep2)
             pyautogui.doubleClick(500, 100)
             time.sleep(rback2)
+            print("End of the pause")
             pyautogui.doubleClick(500, 100)
         if breaksevening !=2:
             rsleep3=random.randint(400,1500)
@@ -144,6 +150,7 @@ def click4():
             time.sleep(rsleep3)
             pyautogui.doubleClick(500, 100)
             time.sleep(rback3)
+            print("End of the pause")
             pyautogui.doubleClick(500, 100)
 
 
@@ -172,6 +179,7 @@ def click2():
         hourst=random.randint(0,2)
         minutst=random.randint(10,59)
         date2 = f"0{hourst}:{minutst}"
+        print("Sleeping")
         print(f"Next click at {date} and {date2}")
 
 
