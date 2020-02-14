@@ -8,9 +8,9 @@ screenWidth, screenHeight = pyautogui.size() # Get the size of the primary monit
 currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the mouse.
 
 #activehours
-hours=random.randint(8,9)
+hours=random.randint(10,11)
 minuts=random.randint(10,59)
-date = f"0{hours}:{minuts}"
+date = f"{hours}:{minuts}"
 
 hourst=random.randint(0,2)
 minutst=random.randint(10,59)
@@ -60,9 +60,9 @@ def click():
         pyautogui.doubleClick(500, 100)
 
         
-        hours=random.randint(8,9)
+        hours=random.randint(10,11)
         minuts=random.randint(10,59)
-        date = f"0{hours}:{minuts}"
+        date = f"{hours}:{minuts}"
         print(f"Active from {date} to {date2}")
         rsleep=random.randint(300,4500)
         rback=random.randint(360,4500)
