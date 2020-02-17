@@ -1,11 +1,18 @@
 import pyautogui
 import schedule
 import time
+import datetime
 import random
 pyautogui.FAILSAFE = False
 
 screenWidth, screenHeight = pyautogui.size() # Get the size of the primary monitor.
 currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the mouse.
+
+datetime.datetime.now()
+
+print(datetime.datetime.now())
+print("Starting")
+
 
 #activehours
 hours=random.randint(10,11)
@@ -50,14 +57,19 @@ def click():
     rwork=random.randint(0,3)
     if rwork == 0:
         freemorning = True
+        print(datetime.datetime.now())
+
         print ("Will take a break next morning")
 
     if not freemorning:
 
+        print(datetime.datetime.now())
+
+
         print("Morning click")
         rdelay=random.randint(1,59)
         time.sleep(rdelay)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
 
         
         hours=random.randint(10,11)
@@ -66,11 +78,15 @@ def click():
         print(f"Active from {date} to {date2}")
         rsleep=random.randint(300,1400)
         rback=random.randint(360,2500)
+        print(datetime.datetime.now())
+
         print(f"Will take a break of {rback} seconds after {rdelay+rsleep} seconds")
         time.sleep(rsleep)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
         time.sleep(rback)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
+        print(datetime.datetime.now())
+
         print("End of the break")
 
 
@@ -84,7 +100,9 @@ def click3():
     if not freemorning:
         launchdelay=random.randint(1,60)
         time.sleep(launchdelay)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
+        print(datetime.datetime.now())
+
         
         print ("Launch time click")
 
@@ -98,15 +116,19 @@ def click4():
     rsiesta =random.randint(0,5)
     if rsiesta == 0:
         freeevening = True
+        print(datetime.datetime.now())
+
         print ("Will take a break next evening")
     else:
+
+        print(datetime.datetime.now())
 
         print ("Click after launch")    
         launchdelay=random.randint(1,60)
         time.sleep(launchdelay)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
         
-        launch = random.randint(0, 2)
+        launch = random.randint(0,2)
         
         if launch == 0:
             food=14
@@ -127,29 +149,42 @@ def click4():
         if breaksevening != 0:
             rsleep=random.randint(300,2500)
             rback=random.randint(360,5000)
+            print(datetime.datetime.now())
+
             print(f"Will take a break of {rback} seconds after {rsleep} seconds")
             time.sleep(rsleep)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
             time.sleep(rback)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
+            print(datetime.datetime.now())
+
             print("End of the break")
+
         if breaksevening !=1:
             rsleep2=random.randint(300,3000)
             rback2=random.randint(360,9900)
+            print(datetime.datetime.now())
+
             print(f"Will take a break of {rback2} seconds after {rsleep2} seconds")
             time.sleep(rsleep2)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
             time.sleep(rback2)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
+            print(datetime.datetime.now())
+
             print("End of the break")
         if breaksevening !=2:
             rsleep3=random.randint(400,1500)
             rback3=random.randint(360,8500)
+            print(datetime.datetime.now())
+
             print(f"Will take a break of {rback3} seconds after {rsleep3} seconds")
             time.sleep(rsleep3)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
             time.sleep(rback3)
-            pyautogui.doubleClick(500, 100)
+            pyautogui.doubleClick(500,100)
+            print(datetime.datetime.now())
+
             print("End of the break")
 
 
@@ -173,12 +208,15 @@ def click2():
     global freeevening    
     global date2
     if freeevening:
+        print(datetime.datetime.now())
+
         print ("Sleeping early without click")
     else: 
+        print(datetime.datetime.now())
         print("Click and Sleep")           
         rdelay=random.randint(1,2200)
         time.sleep(rdelay)
-        pyautogui.doubleClick(500, 100)
+        pyautogui.doubleClick(500,100)
         hourst=random.randint(0,2)
         minutst=random.randint(10,59)
         date2 = f"0{hourst}:{minutst}"
