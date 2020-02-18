@@ -53,6 +53,7 @@ freeevening = None
 def click():
     global freemorning
     global date
+    global date2
 
     rwork=random.randint(0,3)
     if rwork == 0:
@@ -72,9 +73,6 @@ def click():
         pyautogui.doubleClick(500,100)
 
         
-        hours=random.randint(10,11)
-        minuts=random.randint(10,59)
-        date = f"{hours}:{minuts}"
         print(f"Active from {date} to {date2}")
         rsleep=random.randint(300,1400)
         rback=random.randint(360,2500)
@@ -113,6 +111,19 @@ def click4():
     global date3
     global date4
 
+    global date2
+    global date
+
+    hours=random.randint(10,11)
+    minuts=random.randint(10,59)
+    date = f"{hours}:{minuts}"
+
+
+    hourst=random.randint(0,2)
+    minutst=random.randint(10,59)
+    date2 = f"0{hourst}:{minutst}"
+
+
     rsiesta =random.randint(0,5)
     if rsiesta == 0:
         freeevening = True
@@ -128,20 +139,7 @@ def click4():
         time.sleep(launchdelay)
         pyautogui.doubleClick(500,100)
         
-        launch = random.randint(0,2)
-        
-        if launch == 0:
-            food=14
-            foodminuts=random.randint(30,59)
-            endfood=15
-            endfoodminuts=random.randint(21,59)
-        else:
-            food=random.randint(13,14)
-            foodminuts=random.randint(10,59)
-            endfood=random.randint(15,16)
-            endfoodminuts=random.randint(10,59)
-            date3 = f"{food}:{foodminuts}"
-            date4 = f"{endfood}:{endfoodminuts}"
+
         
 #randomstops
 
@@ -207,6 +205,25 @@ def click2():
 
     global freeevening    
     global date2
+    global date3
+    global date4
+
+    launch = random.randint(0,2)
+        
+    if launch == 0:
+        food=14
+        foodminuts=random.randint(30,59)
+        endfood=15
+        endfoodminuts=random.randint(21,59)
+    else:
+        food=random.randint(13,14)
+        foodminuts=random.randint(10,59)
+        endfood=random.randint(15,16)
+        endfoodminuts=random.randint(10,59)
+    date3 = f"{food}:{foodminuts}"
+    date4 = f"{endfood}:{endfoodminuts}"
+
+
     if freeevening:
         print(datetime.datetime.now())
 
@@ -217,9 +234,6 @@ def click2():
         rdelay=random.randint(1,2200)
         time.sleep(rdelay)
         pyautogui.doubleClick(500,100)
-        hourst=random.randint(0,2)
-        minutst=random.randint(10,59)
-        date2 = f"0{hourst}:{minutst}"
         print(f"Next click at {date} and {date2}")
 
 
