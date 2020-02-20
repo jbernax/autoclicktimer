@@ -1,9 +1,14 @@
+#SIMPLE VERSION, JUST 2 CLICKS
+
+
 import pyautogui
 import schedule
 import time
 import datetime
 import random
 pyautogui.FAILSAFE = False
+
+
 
 screenWidth, screenHeight = pyautogui.size() # Get the size of the primary monitor.
 currentMouseX, currentMouseY = pyautogui.position() # Get the XY position of the mouse.
